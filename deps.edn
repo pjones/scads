@@ -1,0 +1,8 @@
+{:deps
+ {org.clojure/clojure {:mvn/version "1.10.3"}
+  scad-clj/scad-clj {:mvn/version "0.5.3"}
+  funcool/datoteka {:mvn/version "2.0.0"}}
+
+ :aliases
+ {:cljfmt {:extra-deps {cljfmt/cljfmt {:mvn/version "0.7.0"}}
+           :main-opts ["-m" "cljfmt.main" "fix"]}}}
