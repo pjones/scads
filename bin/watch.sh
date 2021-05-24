@@ -5,6 +5,8 @@ set -o pipefail
 
 cd "$(dirname "$0")/.."
 
+bin/build.sh
+
 while inotifywait -r -e modify src; do
-  clj -X main/run || :
+  bin/build.sh || :
 done

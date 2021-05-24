@@ -1,5 +1,6 @@
 (ns main
   (:require [misc.table-umbrella-plug]
+            [misc.pool-skimmer-handle]
             [scad-clj.scad :as scad]
             [scad-clj.model :as model]
             [datoteka.core :as fs]))
@@ -17,4 +18,5 @@
 
 (defn run
   [_]
-  (scad-to-file "table-umbrella-plug.scad" table-umbrella-plug/plug))
+  (scad-to-file "table-umbrella-plug.scad" table-umbrella-plug/plug)
+  (scad-to-file "pool-skimmer-handle.scad" pool-skimmer-handle/model))
